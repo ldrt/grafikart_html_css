@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Fiasco, Nous contacter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Accueil">Accueil</a></li>
+            <li><a href="menu.html" title="Menu">Menu</a></li>
+            <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2> Où nous trouver</h2>
+        <address>
+            123 rue de la démo, 34000 Montpellier
+        </address>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92442.49275737663!2d3.8041218838787065!3d43.610124865273875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af0725dd9db1%3A0xad8756742894e802!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1613479693365!5m2!1sfr!2sfr"
+            width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+
+        <h2>Nous contacter</h2>
+        <form action="contact.html">
+            <div>
+                <select name="objet" id="select_objet">
+                    <optgroup label="Client">
+                        <option value="reservation">Faire une réservation</option>
+                        <option value="question">Poser une question</option>
+                    </optgroup>
+                    <optgroup label="Autre">
+                        <option value="emploi">Postuler</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="input_email">Votre email <sup>*</sup></label>
+                <input type="email" name="email" id="input_email" required placeholder="votre@email.fr">
+            </div>
+            <div>
+                <label for="input_name">Votre nom<sup>*</sup></label>
+                <input type="text" name="firsname" id="input_name" required>
+            </div>
+            <div>
+                <label for="textarea_message">Votre message</label>
+                <textarea name="message" id="textarea_message" required></textarea>
+            </div>
+            <div>
+                <label for="input_file">Pièce jointe</label>
+                <input type="file" name="file" id="input_file">
+            </div>
+            <input type="submit" value="Envoyer le formulaire">
+        </form>
+    </section>
+</body>
+
+</html>

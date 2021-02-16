@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0.2;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+    background-color: gray;
+    padding: 20px;
+    height: 300px;
+    color: white;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black, #0008), url("assets/img/banniere_fiasco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local, fixed;
+}
+
+.header-title {
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+    text-transform: capitalize;
+    z-index: 4;
+}
+
+.header img{
+    width: 100%;
+    height: auto;
+}
+
+.header-nav {
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+.header-nav a {
+    float: left;
+    width: 25%;
+    color: inherit;
+    padding: 0 10px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main {
+    position: relative;
+    background-color: lightgray;
+    font-size: 16px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.main p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.footer {
+    background-color: gray;
+    padding: 10px 20px;
+}
